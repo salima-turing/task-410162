@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Review Dashboard</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .filter-container { margin-bottom: 20px; }
+        /* Additional styling... */
+    </style>
+</head>
+<body>
+
+<div class="filter-container">
+    <label for="start-date">Start Date:</label>
+    <input type="date" id="start-date" />
+
+    <label for="end-date">End Date:</label>
+    <input type="date" id="end-date" />
+
+    <button id="filter-button">Filter</button>
+</div>
+
+<div id="charts"></div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
